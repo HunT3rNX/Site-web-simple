@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr" class="html-image">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Accueil</title>
+</head>
+<body>
+    <span id="top"></span>
+    <header id="header">
+        <div>
+            <img id="logo" src="img/logo3.png" alt="logo">
+            <img id="burger" src="img/toggle-icon.png" onclick="menu('')" alt="menu-burger"/>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li id="parent-active">
+                    <a id="active" href="./">ACCUEIL</a>
+                </li>
+                <li onclick> 
+                    <a href="produit/index.html" >PRODUIT</a>
+                    <ul class="submenu">
+                        <li><a href="produit/index.html#chauffe-eau">Chauffe-eau connecté</a></li>
+                        <li><a href="produit/index.html#pompe-chaleur">Pompe à chaleur</a></li>
+                    </ul>
+                </li>
+                <li onclick> 
+                    <a href="faq/index.html">FAQ</a>
+                    <ul class="submenu">
+                        <li><a href="faq/index.html#Questions-Fréquentes">Questions Fréquentes</a></li>
+                        <li><a href="faq/index.html#Problème-technique">Problème technique</a></li>
+                        <li><a href="faq/index.html#Application-mobile">Application mobile</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact/index.html">NOUS CONTACTER</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="background-img-home">
+            <div id="texte">
+                <h2> 1, 2, 3... C'est parti pour les soldes !</h2>
+            </div>
+            <div id="button-home">
+                <a href="produit/index.html">Découvrir</a>
+            </div>
+        </section>
+        <section class="home-container row color-section">
+            <div class="container">
+                <h2>Des économies sur le long terme</h2>
+                    <p>
+                        Peur des factures ?<br>Pas d'inquiétude, chez Cumul’eau nous pensons à tout pour nos clients.<br>
+                        Toute notre gamme de chauffe-eaux est de classe énergétique A+ et éligible aux aides financières. Oui, vous avez bien lu. Votre portefeuille ne peut que bien se porter.
+                    </p>
+            </div>
+            <div class="container">
+                <img class="img-home" title="Source : www.freepik.com" src="img/economy.jpg" alt=""/>
+            </div>
+        </section>
+        <section class="home-container row color-section">
+            <div class="container">
+                <img class="img-home" title="Source : www.freepik.com" src="img/family.jpg" alt=""/>
+            </div>
+            <div class="container">
+                <h2>Du confort pour toute la famille</h2>
+                <p>
+                    Marre de toujours vérifier vos compteurs ?<br> Nos chauffe-eaux s’adaptent à votre style de vie,
+                    vous choisissez vos limites et vos préférences en passant par notre application simple d’utilisation ou directement sur l’interface du chauffe-eau.<br>
+                    Plus de libertés, plus de confort.
+                </p>
+            </div>
+        </section>
+        <section class="home-container row color-section">
+            <div class="container">
+                <h3>Notre respect de l’environnement</h3>
+            </div>
+             <div class="container">
+                <img class="img-home" title="Source : www.freepik.com" src="img/environnement.jpg" alt=""/>
+                <a class="imprime2" href="apropos.html">En savoir plus</a>
+            </div>
+        </section>
+        <div id="scroll-div">
+            <a id="scroll-top" href="#top" onclick="goTop()"></a>
+        </div>
+    </main>
+    <img class="cv" src="img/CV-1.png"  alt="CV">
+    <footer class="column">
+        <div id="top-footer" class="row">
+           <div id="social-media">
+                <h1>Suivez-nous</h1>
+                <div id="reseaux">
+                    <a href="https://instagram.com" target="_blank"></a>
+                    <a href="https://facebook.com" target="_blank"></a>
+                    <a href="https://twitter.com" target="_blank"></a>
+                </div>
+            </div>
+            <div id="other-link">
+                <a href="plan-du-site.html">Plan du site</a>
+                <a href="apropos.html">Qui sommes-nous</a>
+                <a href="partenaire.html">Nos partenaires</a>
+            </div>
+        </div>
+        <div id="copyright"><small>Copyright &copy; 2022, Cumul'eau</small></div>
+   </footer>
+   <script src="js/script.js"></script>
+</body>
+</html>

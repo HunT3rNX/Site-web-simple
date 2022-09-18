@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Partenaire</title>
+</head>
+    <body>
+        <span id="top"></span>
+        <header id="header">
+            <div>
+                <img id="logo" src="img/logo3.png" alt="logo">
+                <img id="burger" src="img/toggle-icon.png" onclick="menu('')" alt="menu-burger"/>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="./">ACCUEIL</a>
+                    </li>
+                    <li onclick>
+                        <a href="produit/index.html" >PRODUIT</a>
+                        <ul class="submenu">
+                            <li><a href="produit/index.html#chauffe-eau">Chauffe-eau connecté</a></li>
+                            <li><a href="produit/index.html#pompe-chaleur">Pompe à chaleur</a></li>
+                        </ul>
+                    </li>
+                    <li onclick> 
+                        <a href="faq/index.html">FAQ</a>
+                        <ul class="submenu">
+                            <li><a href="faq/#Questions-Fréquentes">Questions Fréquentes</a></li>
+                            <li><a href="faq/#Problème-technique">Problème technique</a></li>
+                            <li><a href="faq/#Application-mobile">Application mobile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact/index.html">NOUS CONTACTER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="partenaire-container">
+                <div class="partenaire-titre">
+                    <h2>Nos partenaires vendeurs</h2>
+                    <p>Vous pouvez retrouver nos produits sur le site de nos partenaire</p>
+                </div>
+                <div>
+                    <h3>Brico-Dépôt</h3>
+                    <a href="https://www.bricodepot.fr/" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Bricodepot.svg" alt="img-bricodepot"> </a>
+                </div>
+                <div>
+                    <h3>Leroy-Merlin</h3>
+                    <a href="https://www.leroymerlin.fr/" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Leroy_Merlin.svg" alt="img-leroymerlin"> </a>
+                </div>
+                <div>
+                    <h3>Castorama</h3>
+                    <a href="https://www.castorama.fr/" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Castorama_Logo.svg" alt="img-castorama"> </a>
+                </div>
+                <div>
+                    <h3>Mr Bricolage</h3>
+                    <a href="https://www.mr-bricolage.fr/" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Mr_Bricolage_logo.png" alt="img-bricolage"> </a>
+                </div>
+                <div>
+                    <h3>Darty</h3>
+                    <a href="https://www.darty.com/" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Darty.svg" alt="img-darty"> </a>
+                </div>
+            </div>
+            
+            <div class="partenaire-container">
+                <div class="partenaire-titre">
+                    <h2>Nos partenaires d'électro-ménagers</h2>
+                    <p>Vous pouvez vous accéder à certaines informations des appareils de nos marques partenaires</p>
+                </div>
+                <div>
+                    <h3>2Cool</h3>
+                    <a href="https://dwarves.iut-fbleau.fr/~justine/" target="_blank"> <img class="img-partenaire" src="img/2cool.png" alt="img-2cool"> </a>
+                </div>
+                <div>
+                    <h3>Samsung</h3>
+                    <a href="https://www.samsung.com/fr" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Samsung_wordmark.svg" alt="img-samsung"> </a>
+                </div>
+                <div>
+                    <h3>Bosch</h3>
+                    <a href="https://www.bosch.fr" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Bosch-Logo.svg" alt="img-bosch"> </a>
+                </div>
+                <div>
+                    <h3>LG</h3>
+                    <a href="https://www.lg.com/fr" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/LG_logo_%282015%29.svg" alt="img-lg"> </a>
+                </div>
+                <div>
+                    <h3>Beko</h3>
+                    <a href="https://www.beko.fr/" target="_blank"> <img class="img-partenaire" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Beko_logo.svg" alt="img-beko"> </a>
+                </div>
+            </div>
+            <div id="scroll-div">
+                <a id="scroll-top" href="#top" onclick="goTop()"></a>
+            </div>
+        </main>
+        <footer class="column">
+            <div id="top-footer" class="row">
+            <div id="social-media" class="column">
+                    <h1>Suivez-nous</h1>
+                    <div id="reseaux" class="row">
+                        <a href="https://instagram.com" target="_blank"></a>
+                        <a href="https://facebook.com" target="_blank"></a>
+                        <a href="https://twitter.com" target="_blank"></a>
+                    </div>
+                </div>
+                <div id="other-link" class="column">
+                    <a href="plan-du-site.html">Plan du site</a>
+                    <a href="apropos.html">Qui sommes-nous</a>
+                    <a id="active" href="partenaire.html">Nos partenaires</a>
+                </div>
+            </div>
+            <div id="copyright"><small>Copyright &copy; 2022, Cumul'eau</small></div>
+    </footer>
+    <script src="js/script.js"></script>
+    </body>
+</html>

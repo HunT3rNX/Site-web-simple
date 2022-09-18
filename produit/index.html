@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <title>Produit</title>
+</head>
+    <body>
+        <span id="top"></span>
+        <header id="header">
+            <div>
+                <img id="logo" src="../img/logo3.png" alt="logo">
+                <img id="burger" src="../img/toggle-icon.png" onclick="menu('../')" alt="menu-burger"/>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="../index.html">ACCUEIL</a>
+                    </li>
+                    <li id="parent-active" onclick>
+                        <a id="active" href="">PRODUIT</a>
+                        <ul class="submenu">
+                            <li><a href="#chauffe-eau">Chauffe-eau connecté</a></li>
+                            <li><a href="#pompe-chaleur">Pompe à chaleur</a></li>
+                        </ul>
+                    </li>
+                    <li onclick>
+                        <a href="../faq/index.html">FAQ</a>
+                        <ul class="submenu">
+                            <li><a href="../faq/index.html#questions-fréquentes">Questions Fréquentes</a></li>
+                            <li><a href="../faq/index.html#problème-technique">Problème technique</a></li>
+                            <li><a href="../faq/index.html#application-mobile">Application mobile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact/index.html">NOUS CONTACTER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Contenu de la page -->
+
+            <section id="chauffe-eau" class="produit">
+                <div class="produit-container">
+                    <h2>Mazu</h2>
+                    <div class="produit-content">
+                        <img class="img-produit" title="Source : https://www.systemed.fr/" src="../img/Mazu.jpg" alt=""/>
+                        <div class="carac-produit">
+                            <div>
+                                <h3>Plus d’économies</h3>
+                                <p>
+                                    Classe énergétique A+. <br>
+                                    Jusqu’à 60% d’économie d’électricité (sur la part eau chaude de votre facture) grâce à la pompe à chaleur.<br>
+                                    Utilise l’air ambiant comme source d’énergie principale.<br>
+                                    Éligible aux aides financières(3) : CEE, Crédit d’Impôt à la Transition Énergétique, MaPrimeRenov’, TVA à taux réduit, Chèque Energie.<br>
+                                    Retour sur investissement en moins de 1 an.
+                                </p>
+                            </div>
+                            <div>
+                                <h3>Caractéristiques</h3>
+                                <p>
+                                    200 et 300 litre version socle <br>
+                                    Version air ambiant uniquement.<br>
+                                    Doit être installé dans une pièce non chauffée (5°C minimum) et d’un volume minimum de 20 m3 et éloignée des pièces de vie.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit-container">
+                    <h2>Hebo</h2>
+                    <div class="produit-content">
+                        <img class="img-produit"  src="../img/Hebo.jpg" alt=""/>
+                        <div class="carac-produit">
+                            <div>
+                                <h3>Plus d’économies</h3>
+                                <p>
+                                    Classe énergétique A+. <br>
+                                    Jusqu’à 60% d’économie d’électricité (sur la part eau chaude de votre facture) grâce à la pompe à chaleur.<br>
+                                    Utilise l’air ambiant comme source d’énergie principale.<br>
+                                    Éligible aux aides financières(3) : <br> CEE, Crédit d’Impôt à la Transition Énergétique, MaPrimeRenov’,...<br>
+                                    Retour sur investissement en moins de 1 an.
+                                </p>
+                            </div>
+                            <div>
+                                <h3>Caractéristiques</h3>
+                                <p>
+                                    Disponible en 170 pour la version murale <br>
+                                    200 et 250 pour la version socle <br>
+                                    300 litres pour la version split<br>
+                                    Doit être installé dans une pièce non chauffée (5°C minimum) <br> Volume minimum de 20 m3 et éloignée des pièces de vie.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pompe-chaleur" class="produit">
+                <div class="produit-container">
+                    <h2>Fengbo</h2>
+                    <div class="produit-content">
+                        <img class="img-produit" src="../img/pompechaleur.png" title="Source : www.freepik.com" alt=""/>
+                        <div class="carac-produit">
+                            <div>
+                                <h3>Plus d’économies</h3>
+                            <p>
+                            Recupération de la chaleur extérieur et assure une consommation responsable.<br>
+                            Adaptation du régime du moteur en fonction des besoins pour plus d'économies.
+                                </p>
+                            </div>
+                            <div>
+                                <h3>Caractéristiques</h3>
+                                <p>
+                                4 modèles monophasés de 15 à 17 kw (chauffage seul)<br>
+                                Gamme chaud et froid <br>
+                                Niveau sonore du module extérieur: 45 db(A) pour ce modèle.<br>
+                                Niveau sonore du module intérieur: 39 db(A) pour ce modèle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="scroll-div">
+                <a id="scroll-top" href="#top" onclick="goTop()"></a>
+            </div>
+        </main>
+    <footer class="column">
+            <div id="top-footer" class="row">
+            <div id="social-media" class="column">
+                    <h1>Suivez-nous</h1>
+                    <div id="reseaux" class="row">
+                        <a href="https://instagram.com" target="_blank"></a>
+                        <a href="https://facebook.com" target="_blank"></a>
+                        <a href="https://twitter.com" target="_blank"></a>
+                    </div>
+                </div>
+                <div id="other-link" class="column">
+                    <a href="../plan-du-site.html">Plan du site</a>
+                    <a href="../apropos.html">Qui sommes-nous</a>
+                    <a href="../partenaire.html">Nos partenaires</a>
+                </div>
+            </div>
+            <div id="copyright"><small>Copyright &copy; 2022, Cumul'eau</small></div>
+    </footer>
+    <script src="../js/script.js"></script>
+    </body>
+</html>

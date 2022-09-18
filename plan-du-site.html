@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Contact</title>
+</head>
+    <body>
+        <span id="top"></span>
+        <header id="header">
+            <div>
+                <img id="logo" src="img/logo3.png" alt="logo">
+                <img id="burger" src="img/toggle-icon.png" onclick="menu('')" alt="menu-burger"/>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="./">ACCUEIL</a>
+                    </li>
+                    <li >
+                        <a href="produit/">PRODUIT</a>
+                        <ul class="submenu">
+                            <li><a href="produit/index.html#chauffe-eau">Chauffe-eau connecté</a></li>
+                            <li><a href="produit/index.html#pompe-chaleur">Pompe à chaleur</a></li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="faq/index.html">FAQ</a>
+                        <ul class="submenu">
+                            <li><a href="faq/index.html#Questions-Fréquentes">Questions Fréquentes</a></li>
+                            <li><a href="faq/index.html#Problème-technique">Problème technique</a></li>
+                            <li><a href="faq/index.html#Application-mobile">Application mobile</a></li>
+                        </ul>
+                    </li>
+                    <li id="parent-active"><a  href="contact/index.html">NOUS CONTACTER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="plan-site">
+                <h2>Plan du site</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produit/index.html">Produit</a></li>
+                    <ul>
+                        <li><a href="produit/index.html#chauffe-eau">Chauffe-eau connecté</a></li>
+                        <li><a href="produit/index.html#pompe-a-chaleur">Pompe à chaleur</a></li>
+                    </ul>
+                    <li><a href="faq/index.html">FAQ</a></li>
+                    <ul>
+                        <li><a href="faq/index.html#questions-frequentes">Questions Fréquentes</a></li>
+                        <li><a href="faq/index.html#probleme-technique">Problèmes techniques</a></li>
+                        <li><a href="faq/index.html#application-mobile">Application Mobile</a></li>
+                    </ul>
+                    <li><a href="contact/index.html">Contact</a></li>
+                    <li><a href="apropos.html">Qui sommes-nous ?</a></li>
+                    <li><a href="partenaire.html">Nos partenaires</a></li>
+                </ul>
+            </section>
+            <div id="scroll-div">
+                <a id="scroll-top" href="#top" onclick="goTop()"></a>
+            </div>
+        </main>
+        <footer class="column">
+            <div id="top-footer" class="row">
+            <div id="social-media" class="column">
+                    <h1>Suivez-nous</h1>
+                    <div id="reseaux" class="row">
+                        <a href="https://instagram.com" target="_blank"></a>
+                        <a href="https://facebook.com" target="_blank"></a>
+                        <a href="https://twitter.com" target="_blank"></a>
+                    </div>
+                </div>
+                <div id="other-link" class="column">
+                    <a id="active" href="plan-du-site.html">Plan du site</a>
+                    <a href="apropos.html">Qui sommes-nous</a>
+                    <a href="partenaire.html">Nos partenaires</a>
+                </div>
+            </div>
+            <div id="copyright"><small>Copyright &copy; 2022, Cumul'eau</small></div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Qui sommes-nous ?</title>
+</head>
+    <body>
+        <span id="top"></span>
+        <header id="header">
+            <div>
+                <img id="logo" src="img/logo3.png" alt="logo">
+                <img id="burger" src="img/toggle-icon.png" onclick="menu('')" alt="menu-burger"/>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">ACCUEIL</a>
+                    </li>
+                    <li onclick>
+                        <a href="produit/index.html" >PRODUIT</a>
+                        <ul class="submenu">
+                            <li><a href="produit/index.html#chauffe-eau">Chauffe-eau connecté</a></li>
+                            <li><a href="produit/index.html#pompe-chaleur">Pompe à chaleur</a></li>
+                        </ul>
+                    </li>
+                    <li onclick> 
+                        <a href="faq/index.html">FAQ</a>
+                        <ul class="submenu">
+                            <li><a href="faq/#Questions-Fréquentes">Questions Fréquentes</a></li>
+                            <li><a href="faq/#Problème-technique">Problème technique</a></li>
+                            <li><a href="faq/#Application-mobile">Application mobile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact/index.html">NOUS CONTACTER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="fondateur-container">
+                <h2>LES FONDATEURS : </h2>
+                <div class="fondateurs">
+                    <div class="fondateur-info">
+                        <h3>JUSTINE Yannis</h3>
+                        <img class="pp" src="img/img_yannis.jpg" alt=""/>
+                        <ul>
+                          <li>Président directeur général</li>
+                          <li>18 ans</li>
+                        </ul>
+                        <a class="imprime1" onClick="printCv('yannis')" >Imprimer le CV</a>
+                    </div>
+                    <div class="fondateur-info">
+                        <h3>NEVEJANS Baptiste</h3>
+                        <img class="pp" src="img/img_baptiste.png" alt=""/>
+                        <ul>
+                          <li>Directeur des ressources humaines</li>
+                          <li>19 ans</li>
+                        </ul>
+                        <a class="imprime1" onClick="printCv('baptiste')" >Imprimer le CV</a>
+                    </div>
+                    <div class="fondateur-info">
+                        <h3>DELAGE Mathis</h3>
+                        <img class="pp" src="img/img_mathis.jpg" alt=""/>
+                        <ul>
+                          <li>Directeur des opérations</li>
+                          <li>18 ans</li>
+                        </ul>
+                        <a class="imprime1" onClick="printCv('mathis')">Imprimer le CV</a>
+                    </div>
+                </div>
+                <a class="imprime" onClick="printAllCv()">Imprimer les CVs</a>
+            </section>
+            <section>
+                <div class ="about-us-content">
+                    <h2>Informations</h2>
+                    <div>
+                        <h3>Reconnue dans le monde entier</h3>
+                        <ul>
+                            <li>Vendue par nos <a href="partenaire.html">partenaires</a></li>
+                        </ul>
+                    
+                        <h3>Fabrication française</h3>
+                        <ul>
+                            <li>Collaborateurs en Europe</li>
+                            <li><strong>5 usines en France</strong></li>
+                        </ul>
+                    </div>
+                    <h2>Qui sommes-nous ?</h2>
+                    <div>
+                        <p>
+                            Cumul’eau est une start-up de vente de chauffe-eau connecté qui existe depuis 2018.<br>
+                            Fabriquée et implantée à Bordeaux, elle vient s’installer en région parisienne en 2019.<br>
+                            Notre préoccupation ? <br> La consommation d’énergie qui impact sur l’environnement.<br>
+                            Dans un monde aux ressources préservées, c’est tout un secteur qui doit se réinventer.<br>
+                            Grâce à notre technologie, la consommation d’énergie est réduite et vos factures vous remercient.<br>
+
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+              </div>
+            </section>
+
+
+            <div id="scroll-div">
+                <a id="scroll-top" href="#top" onclick="goTop()"></a>
+            </div>
+        </main>
+        <img id="yannis" class="cv" src="img/CV-1.png"  alt="CV_yannis_justine">
+        <img id="baptiste" class="cv" src="img/CV-2.png"  alt="CV_baptiste_nevejans">
+        <img id="mathis" class="cv" src="img/CV-3.png"  alt="CV_mathis_delage">
+        <footer class="column">
+            <div id="top-footer" class="row">
+            <div id="social-media" class="column">
+                    <h1>Suivez-nous</h1>
+                    <div id="reseaux" class="row">
+                        <a href="https://instagram.com" target="_blank"></a>
+                        <a href="https://facebook.com" target="_blank"></a>
+                        <a href="https://twitter.com" target="_blank"></a>
+                    </div>
+                </div>
+                <div id="other-link" class="column">
+                    <a href="plan-du-site.html">Plan du site</a>
+                    <a id="active" href="partenaire.html">Qui sommes-nous</a>
+                    <a href="partenaire.html">Nos partenaires</a>
+                </div>
+            </div>
+            <div id="copyright"><small>Copyright &copy; 2022, Cumul'eau</small></div>
+    </footer>
+    <script src="js/script.js"></script>
+    </body>
+</html>

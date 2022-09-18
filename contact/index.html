@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <title>Contact</title>
+</head>
+<body>
+    <span id="top"></span>
+    <header id="header">
+        <div>
+            <img id="logo" src="../img/logo3.png" alt="logo">
+            <img id="burger" src="../img/toggle-icon.png" onclick="menu('../')" alt="menu-burger"/>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="../index.html">ACCUEIL</a>
+                </li>
+                <li onclick>
+                    <a href="../produit/index.html" >PRODUIT</a>
+                    <ul class="submenu">
+                        <li><a href="../produit/index.html#chauffe-eau">Chauffe-eau connecté</a></li>
+                        <li><a href="../produit/index.html#pompe-chaleur">Pompe à chaleur</a></li>
+                    </ul>
+                </li>
+                <li onclick> 
+                    <a href="../faq/index.html">FAQ</a>
+                    <ul class="submenu">
+                        <li><a href="../faq/index.html#Questions-Fréquentes">Questions Fréquentes</a></li>
+                        <li><a href="../faq/index.html#Problème-technique">Problème technique</a></li>
+                        <li><a href="../faq/index.html#Application-mobile">Application mobile</a></li>
+                    </ul>
+                </li>
+                <li id="parent-active"><a id="active" href="index.html">NOUS CONTACTER</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <form method="POST" action="https://dwarves.iut-fbleau.fr/requete.php" class="mise_en_page_formulaire">
+                <fieldset>
+                    <legend>Contactez-Nous</legend>
+
+                    <label for="nom" class="titre-formulaire">Nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Dupont" required>
+
+                    <label for="prenom" class="titre-formulaire">Prénom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Pierre" required>
+
+                    <label for="email" class="titre-formulaire">Adresse email</label>
+                    <input type="email" name="email" id="email" placeholder="monadresse@mail.com" required>
+
+                    <label for="categories" class="titre-formulaire">Sujet</label>
+                    <select name="categories" id="categories">
+                        <option value="chauffe-eau">Chauffe-eau</option>
+                        <option value="pompe-a-chaleur">Pompe à chaleur</option>
+                        <option value="application-mobile">Application mobile</option>
+                        <option value="autre">Autre</option>
+                    </select>
+
+                    <label for="message" class="titre-formulaire">Message</label>
+                    <textarea name="message" id="message" maxlength="1000" placeholder="1000 caractères max" required></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+            </form>
+            <div class="coord">
+                <h2>Nos coordonnées : </h2>
+                <p>06 67 42 87 65 20</p>
+                <p>
+                    30 allée du préambule<br>
+                    91300 Massy.
+                </p>
+            </div>
+        </div>
+        <div id="scroll-div">
+            <a id="scroll-top" href="#top" onclick="goTop()"></a>
+        </div>
+    </main>
+   <footer class="column">
+        <div id="top-footer" class="row">
+           <div id="social-media" class="column">
+                <h1>Suivez-nous</h1>
+                <div id="reseaux" class="row">
+                    <a href="https://instagram.com" target="_blank"></a>
+                    <a href="https://facebook.com" target="_blank"></a>
+                    <a href="https://twitter.com" target="_blank"></a>
+                </div>
+            </div>
+            <div id="other-link" class="column">
+                <a href="../plan-du-site.html">Plan du site</a>
+                <a href="../apropos.html">Qui sommes-nous</a>
+                <a href="../partenaire.html">Nos partenaires</a>
+            </div>
+        </div>
+        <div id="copyright"><small>Copyright &copy; 2022, Cumul'eau</small></div>
+   </footer>
+   <script src="../js/script.js"></script>
+</body>
+</html>
